@@ -1,0 +1,6 @@
+{
+  "name": "VIDYA VANI — Vernacular Pedagogy & Real-Time Classroom Translation",
+  "description": "Portfolio & Interactive Showcase of VIDYA VANI: AI-powered vernacular pedagogy and offline-first real-time translation for Mother Tongue-Based Multilingual Education in Jharkhand's tribal primary schools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

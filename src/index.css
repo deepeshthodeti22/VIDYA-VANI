@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #9d3d1e;
+    --primary-container: #bd5533;
+    --primary-fixed: #ffdbd0;
+    --secondary: #3a6848;
+    --secondary-container: #bbefc6;
+    --tertiary: #8d4b00;
+    --tertiary-fixed: #ffdcc3;
+    --background: #fff8f6;
+    --surface: #fff8f6;
+    --surface-container-low: #fdf1ed;
+    --surface-container: #f7ebe8;
+    --surface-container-high: #f2e6e2;
+    --surface-container-highest: #ece0dd;
+    --surface-container-lowest: #ffffff;
+    --outline: #8a726b;
+    --outline-variant: #ddc0b8;
+    --on-surface: #201a18;
+    --on-surface-variant: #56423c;
+  }
+
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #201a18;
+    background-color: #fff8f6;
+  }
+
+  h1, h2, h3, .font-serif-headline {
+    font-family: 'Noto Serif', serif;
+  }
+}
+
+.font-olchiki {
+  font-family: 'Noto Sans Ol Chiki', 'Noto Sans', sans-serif;
+}
+
+.font-devanagari {
+  font-family: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+}
+
+/* Tactile Clay & Stamped Shadow effects matching the prototypes */
+.clay-card {
+  border: 1.5px solid #ddc0b8;
+  box-shadow: 0px 3px 0px #ddc0b8;
+}
+
+.clay-card-active:active {
+  transform: translateY(2px);
+  box-shadow: 0px 1px 0px #ddc0b8;
+}
+
+.clay-btn {
+  border-bottom: 3px solid #81290a;
+}
+
+.clay-btn:active {
+  transform: translateY(2px);
+  border-bottom-width: 1px;
+}
+
+.paper-shadow {
+  box-shadow: 0 4px 0 #d8cebe, 0 10px 24px rgba(43, 37, 35, 0.08);
+}
+
+/* Blackboard Styles */
+.slate-board-green {
+  background-color: #172e22;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 82% 75%, rgba(0, 0, 0, 0.25) 0%, transparent 50%);
+}
+
+.slate-board-charcoal {
+  background-color: #1a1a19;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 35%);
+}
+
+.wood-frame {
+  box-shadow: 
+    inset 0 0 0 4px #543722,
+    inset 0 0 0 7px #7d5334,
+    inset 0 0 0 9px #352113,
+    0 4px 14px rgba(0,0,0,0.3);
+}
+
+.chalk-white {
+  color: #f7f9f5;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+.chalk-yellow {
+  color: #fce881;
+  text-shadow: 0 0 1px rgba(252, 232, 129, 0.8), 0 0 8px rgba(252, 232, 129, 0.2);
+}
+
+.chalk-terracotta {
+  color: #ff9d80;
+  text-shadow: 0 0 1px rgba(255, 157, 128, 0.8), 0 0 8px rgba(255, 157, 128, 0.2);
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.92); opacity: 0.8; }
+  50% { transform: scale(1.08); opacity: 0.35; }
+  100% { transform: scale(0.92); opacity: 0.8; }
+}
+
+.animate-pulse-ring-slow {
+  animation: pulse-ring 2.8s ease-in-out infinite;
+}
+
+.animate-pulse-ring-mid {
+  animation: pulse-ring 2.8s ease-in-out 0.4s infinite;
+}
+
+@keyframes caret-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-caret {
+  animation: caret-blink 1s step-end infinite;
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide scrollbars for clean chip rails */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
