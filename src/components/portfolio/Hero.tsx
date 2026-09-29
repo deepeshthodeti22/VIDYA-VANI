@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreApp, onReadPillars }) => {
         {/* Hero Visual: Authentic Classroom Photograph */}
         <div className="relative rounded-2xl overflow-hidden border-2 border-[#ddc0b8] shadow-md bg-[#fdf1ed]">
           <img
-            src="/src/assets/images/hero_vidya_vani_1790701613010.jpg"
+            src="/assets/images/hero_vidya_vani_1790701613010.jpg"
             alt="Teacher and tribal Santali students in a primary school classroom in Jharkhand using a bilingual tablet"
             referrerPolicy="no-referrer"
             className="w-full h-[320px] sm:h-[460px] lg:h-[540px] object-cover"

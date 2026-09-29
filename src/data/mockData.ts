@@ -166,7 +166,7 @@ export const INITIAL_FLASHCARDS: FlashcardItem[] = [
     phoneticTip: 'Short vowel \'i\', crisp ending',
     category: 'Forest Fauna',
     tier: 'Beginner Tier (स्तर १)',
-    imageUrl: '/src/assets/images/flashcard_deer_fauna_1790701625753.jpg',
+    imageUrl: '/assets/images/flashcard_deer_fauna_1790701625753.jpg',
     exampleOlChiki: 'ᱫᱟᱨᱮ ᱥᱩᱨ ᱨᱮ ᱡᱤᱞ ᱢᱮᱱᱟᱭᱟ',
     exampleHindi: 'हिरण पेड़ के पास है',
     exampleEnglish: 'The deer is near the tree',

@@ -65,7 +65,7 @@ export const PillarsSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
             <div className="lg:col-span-7">
               <img
-                src="/src/assets/images/vidya_vani_offline_diagram_1790701639723.jpg"
+                src="/assets/images/vidya_vani_offline_diagram_1790701639723.jpg"
                 alt="VIDYA VANI Offline-First Architecture Diagram"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto rounded-xl border border-[#ddc0b8] object-cover shadow-xs"
